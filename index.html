@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2>Geometry Calculator</h2>
+        </div>
+
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="tra()">Triangle</button>
+            <button class="btn btn-primary" onclick="trapezium()">Trapezium</button>
+            <button class="btn btn-primary" onclick="square()">Square</button>
+            <button class="btn btn-primary" onclick="rho()">Rhombus</button>
+            <button class="btn btn-primary" onclick="rec()">Rectangle</button>
+            <button class="btn btn-primary" onclick="par()">Parallelogram</button>
+            <button class="btn btn-primary" onclick="cir()">Circle</button>
+        </div>
+
+        <div class="text-center mt-4">
+            <div id="dis" class="alert alert-info">DISPLAY ANSWER</div>
+        </div>
+    </div>
+
+
+    <script>
+        function tra() {
+            var height = prompt("Type the height you want");
+            var base = prompt("Type the width you want");
+            var areaOfTriangle = (height * base / 2);
+            alert(areaOfTriangle);
+            dis.innerHTML = areaOfTriangle;
+        }
+
+         function trapezium(){
+    var side1 = prompt("Enter the length of the first parallel side of the trapezium:")
+    var side2 = prompt("Enter the length of the second parallel side of the trapezium:")
+    var height = prompt("Enter the height of the trapezium:")
+    var areaOfTrapezium =  (side1 + side2 / 2 * height)
+    alert(areaOfTrapezium)
+    dis.innerHTML= areaOfTrapezium
+    }
+
+    function square(){
+    var length = prompt("type the first length you want")
+    var length = prompt("type the second length you want")
+    var areaOfSquare = (length * length)
+    alert(areaOfSquare)
+    dis.innerHTML= areaOfSquare
+    }
+
+    function rho(){
+    var diagonal1 = prompt("Enter the length of the first diagonal of the rhombus")
+    var diagonal2 = prompt("Enter the length of the second diagonal of the rhombus")
+    var areaOfRhombus = (diagonal1 * diagonal2 / 2)
+    alert(areaOfRhombus)
+    dis.innerHTML= areaOfRhombus
+    }
+
+    function rec(){
+    var length = prompt("type the length you want")
+    var width = prompt("type the width you want")
+    var areaOfRectangle = (length * width)
+    alert(areaOfRectangle)
+    dis.innerHTML= areaOfRectangle
+    }
+
+    function par(){
+   var base = prompt("type the base you want");
+   var height = prompt("type the height you want");
+   var areaOfParallelogram = (base * height);
+   alert(areaOfParallelogram)
+   dis.innerHTML= areaOfParallelogram
+    }
+
+    function cir(){
+    var radius = prompt("Enter the radius of the circle:")   
+    var areaOfCircle =  (3.14159 * radius ** 2)
+    alert(areaOfCircle)
+    dis.innerHTML= areaOfCircle
+    }
+    </script>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
